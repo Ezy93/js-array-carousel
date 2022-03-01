@@ -1,8 +1,7 @@
 const carouselElements = document.getElementsByClassName("carousel-element");
 console.log(carouselElements);
 
-const nextButton = document.getElementsByClassName("next");
-console.log(nextButton);
+
 
 const imageList = [
     "img/01.jpg",
@@ -33,9 +32,16 @@ carouselElements[0].classList.remove("d-none")
 
 
 
+const nextButton = document.querySelector(".next");
+console.log(nextButton);
 
+let counter = 0;
 
-/* nextButton.addEventListener("click" , function(){
+nextButton.addEventListener('click' , function() {
+
+    carouselElements[counter].classList.remove("active");
+    counter++;
+
     
 
-}) */
+});
