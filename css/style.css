@@ -1,0 +1,51 @@
+
+
+main{
+    height: 100%;
+}
+
+h2{
+    right: 10px;
+    bottom: 35px;
+}
+
+p{
+    right: 10px;
+}
+
+div.row{
+    height: 50%;
+    
+}
+
+div.col-10,
+div.col-10 img{
+    height: 100%;
+}
+
+div.col-10 img,
+div.col-2 img {
+    object-fit: cover;
+}
+
+div.col-2 img{
+    height: calc(100% / 5);
+}
+
+
+
+.my-absolute{
+    position: absolute;
+}
+
+.my-relative{
+    position: relative;
+}
+
+.my-left{
+    left: 68px;
+}
+
+.my-bot-zero{
+    bottom: 0;
+}
