@@ -32,7 +32,9 @@ div.col-2 img{
     height: calc(100% / 5);
 }
 
-
+.carousel-element{
+    width: 100%;
+}
 
 .my-absolute{
     position: absolute;
@@ -48,4 +50,14 @@ div.col-2 img{
 
 .my-bot-zero{
     bottom: 0;
+}
+
+
+.next,
+.previous{
+    cursor: pointer;
+}
+
+.active{
+    display: inline-block;
 }
