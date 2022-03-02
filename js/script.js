@@ -11,6 +11,22 @@ const imageList = [
     "img/05.jpg",
 ];
 
+const title = [
+    'Svezia',
+    'Svizzera',
+    'Gran Bretagna',
+    'Germania',
+    'Paradise'
+];
+
+const text = [
+    'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam, cumque provident totam omnis, magnam dolores dolorum corporis.',
+    'Lorem ipsum',
+    'Lorem ipsum, dolor sit amet consectetur adipisicing elit.',
+    'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam,',
+    'Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam,',
+];
+
 let carouselContent = "";
 
 for(  let i = 0; i < imageList.length; i++ ){
@@ -22,26 +38,3 @@ for(  let i = 0; i < imageList.length; i++ ){
     </div>`
 };
 
-const carouselWrapper = document.querySelector("div.carousel");
-carouselWrapper.innerHTML += carouselContent;
-
-carouselElements[0].classList.add("active");
-carouselElements[0].classList.remove("d-none")
-
-
-
-
-
-const nextButton = document.querySelector(".next");
-console.log(nextButton);
-
-let counter = 0;
-
-nextButton.addEventListener('click' , function() {
-
-    carouselElements[counter].classList.remove("active");
-    counter++;
-
-    
-
-});
