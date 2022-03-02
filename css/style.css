@@ -5,13 +5,19 @@ main{
 }
 
 h2{
-    right: 10px;
-    bottom: 35px;
+    bottom: 4rem;
+}
+
+h2,
+p{
+    right: 1rem;
 }
 
 p{
-    right: 10px;
+    padding-left: 2rem;
 }
+
+
 
 div.row{
     height: 50%;
@@ -32,6 +38,11 @@ div.col-2 img{
     height: calc(100% / 5);
 }
 
+div.previous{
+    top: 0;
+    z-index: 1;
+}
+
 .carousel-element{
     width: 100%;
 }
@@ -45,7 +56,7 @@ div.col-2 img{
 }
 
 .my-left{
-    left: 68px;
+    left: 45%;
 }
 
 .my-bot-zero{
@@ -60,4 +71,9 @@ div.col-2 img{
 
 .active{
     display: inline-block;
+}
+
+.active-thumb{
+    filter: brightness(50%);
+    border: 4px solid white;
 }
