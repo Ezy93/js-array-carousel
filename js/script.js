@@ -26,9 +26,8 @@ const text = [
 ];
 
 
-
+/* prendo gli elementi del DOM sui quali eseguiro le operazioni */
 const carouselElements = document.getElementsByClassName("carousel");
-console.log(carouselElements);
 const nextButton = document.getElementById("next");
 const previousButton = document.getElementById("previous");
 
@@ -40,7 +39,7 @@ let thumbsElement = "";
 
 
 
-
+/* con un ciclo for aggiungo dinamicamente parti al DOM */
 for( let i = 0 ; i < imageList.length; i++ ){
     carouselContent +=`
     <div class="carousel-element text-white my-relative my-d-none">
@@ -61,16 +60,16 @@ for( let i = 0 ; i < imageList.length; i++ ){
 
 
 };
-
+/* inizializzo una variabile che mi servira da contatore per scegliere quale immagine sara attiva */
 let active = 1;
 
-
+/* rendo gli elementi iniziali attivi */
 document.getElementsByClassName("carousel-element")[active].classList.add("active");
 
 document.getElementsByClassName("pointer")[active].classList.add("active-thumb");
 document.getElementsByClassName("pointer")[active].classList.remove("sleepy");
 
-
+/* aggiungo un eventlistener per far si che al click sul bottone previous le immagini scorrano  */
 previousButton.addEventListener("click" , function(){
     
     document.getElementsByClassName("carousel-element")[active].classList.remove("active");
@@ -89,7 +88,7 @@ previousButton.addEventListener("click" , function(){
     document.getElementsByClassName("pointer")[active].classList.remove("sleepy");
 
 });
-
+/* aggiungo un eventlistener per far si che al click sul bottone next le immagini scorrano  */
 nextButton.addEventListener("click" , function(){
     
     document.getElementsByClassName("carousel-element")[active].classList.remove("active");
